@@ -13,3 +13,12 @@ resultado = filtarPares(arr)
 console.log(resultado)
 */
 
+const express = require('express')
+
+const app = express()
+
+app.get('/', function (req, res) {
+    res.send('NOSSA API TA FUNCIONANDO')
+})
+
+app.listen(3000)
